@@ -4,16 +4,16 @@ authors = [
     { name = "Agile Shift", email = "contacto@gruporeal.org" }
 ]
 description = "Credit Card Utils"
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.10,<3.14"
 readme = "README.md"
 dynamic = ["version"]
+
+dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/AgileShift/cc_management"
 Repository = "https://github.com/AgileShift/cc_management.git"
 "Bug Reports" = "https://github.com/AgileShift/cc_management/issues"
-
-dependencies = []
 
 [build-system]
 requires = ["flit_core >=3.4,<4"]
@@ -21,5 +21,14 @@ build-backend = "flit_core.buildapi"
 
 [tool.bench.dev-dependencies]
 
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
 [tool.ruff.lint]
 typing-modules = ["frappe.types.DF"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
+docstring-code-format = true
