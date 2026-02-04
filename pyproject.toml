@@ -4,7 +4,7 @@ authors = [
     { name = "Agile Shift", email = "contacto@gruporeal.org" }
 ]
 description = "Credit Card Utils"
-requires-python = ">=<3.14"
+requires-python = ">=3.14"
 readme = "README.md"
 dynamic = ["version"]
 
